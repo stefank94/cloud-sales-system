@@ -1,0 +1,8 @@
+﻿namespace CloudSales.Presentation.API.DtoModels
+{
+    public class AccountDto
+    {
+        public Guid Id { get; set; }
+        public string? Name { get; set; }
+    }
+}

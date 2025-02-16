@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>c883f900-6bee-4770-89c2-d75061d7aa45</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.1" />
+    <PackageReference Include="Npgsql" Version="9.0.2" />
+    <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\CloudSales.Application.Services\CloudSales.Application.Services.csproj" />
+    <ProjectReference Include="..\..\Domain\CloudSales.Domain.Exceptions\CloudSales.Domain.Exceptions.csproj" />
+    <ProjectReference Include="..\..\Domain\CloudSales.Domain.Repositories\CloudSales.Domain.Repositories.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\CloudSales.Infrastructure.Ccp\CloudSales.Infrastructure.Ccp.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\CloudSales.Infrastructure.Database\CloudSales.Infrastructure.Database.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\CloudSales.Infrastructure.Repositories\CloudSales.Infrastructure.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>
